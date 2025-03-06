@@ -1,10 +1,28 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Hey!</title>
-    <script src="http://52.4.239.249:3000/hook.js"></script>
-  </head>
-  <body>
-    <p>Why are <strong>you</strong> here?</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Potdar</title>
+    <meta property="og:title" content="Aryan Potdar">
+    <meta property="og:description" content="Know stuff about me!">
+    <meta property="og:image" content="https://aryanpotdar.com/images/meta.png">
+    <meta property="og:url" content="https://aryanpotdar.com">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="https://aryanpotdar.com/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css?v=1.0.13">
+</head>
+<body>
+    <div class="container">
+        <a href="https://portfolio.aryanpotdar.com">
+            <img src="https://aryanpotdar.com/images/meta.png" alt="LiquidRhyx" class="profile-img"></a>
+        <a href="https://portfolio.aryanpotdar.com" class="name" id="track-click">Aryan Potdar</a>
+        <script>
+            document.getElementById("track-click").addEventListener("click", function() {
+                fetch("reload.php")
+                    .then(response => response.json())
+            });
+        </script>
+    </div>
+</body>
 </html>
